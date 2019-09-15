@@ -1,4 +1,4 @@
-package com.ems.app.repository;
+ package com.ems.app.repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -24,8 +24,7 @@ public class StudentController {
 	}
 
 	@RequestMapping("/students/{id}")
-	public Student getProduct(@PathVariable String id, Model model) {
-		model.addAttribute("id", studentService.getById(Integer.parseInt(id)));
-		return (Student) model;
+	public Student getProduct(@PathVariable String id) {
+		return studentService.getById(Integer.parseInt(id));
 	}
 }

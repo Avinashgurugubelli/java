@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 
 import com.ems.app.models.Employee;
+import com.ems.app.models.Student;
 import com.ems.app.repository.EmployeeRepository;
 import com.ems.app.services.interfaces.IEmployeesService;
 
@@ -21,4 +22,8 @@ public class EmployeeService implements IEmployeesService {
 		return this.employeeRepository.findAll();
 	}
 
+	@Override
+    public Employee getById(Long id) {
+        return employeeRepository.findOne(id);
+    }
 }

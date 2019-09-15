@@ -7,4 +7,5 @@ import com.ems.app.models.Employee;
 public interface IEmployeesService {
 
 	List<Employee> listAll();
+	Employee getById(Long id);
 }
