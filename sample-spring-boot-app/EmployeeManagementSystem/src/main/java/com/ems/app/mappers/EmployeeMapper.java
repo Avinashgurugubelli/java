@@ -16,8 +16,6 @@ import com.ems.app.models.EmployeeDTO;
 @Mapper
 public interface EmployeeMapper {
 
-//	EmployeeMapper INSTANCE = Mappers.getMapper(EmployeeMapper.class);
-
 	@Mappings({ 
 		@Mapping(target = "employeeId", source = "entity.id"),
 		@Mapping(target = "employeeName", ignore = true)
