@@ -30,7 +30,7 @@ public interface EmployeeMapper {
 	List<EmployeeDTO> toEmployeetDTOs(List<Employee> employees);
 	
 	@AfterMapping
-    default void setBookAuthor(@MappingTarget EmployeeDTO empDTO, Employee employee) {
+    default void setEmployeeName(@MappingTarget EmployeeDTO empDTO, Employee employee) {
 		String employeeFirstName = employee.getFirstName();
 		String employeeLastName = employee.getLastName();
 		empDTO.employeeName = employeeFirstName + "." + employeeLastName;
